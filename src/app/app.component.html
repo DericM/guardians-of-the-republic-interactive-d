@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side" fixedInViewport="true">
+    <app-nav></app-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main fxLayout="row" fxLayoutAlign="center center">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+  <mat-sidenav opened mode="side" position="end" fixedInViewport="true">
+    <article>
+      <app-summary></app-summary>
+    </article>
+  </mat-sidenav>
+</mat-sidenav-container>
